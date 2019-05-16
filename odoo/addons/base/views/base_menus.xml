@@ -25,6 +25,7 @@
               <menuitem id="menu_automation" name="Automation" parent="base.menu_custom"/>
               <menuitem id="menu_security" name="Security" parent="menu_custom" sequence="25"/>
               <menuitem id="menu_ir_property" name="Parameters" parent="menu_custom" sequence="24"/>
+          <menuitem id="base.menu_tests" name="Tests" sequence="1000000"/>
 
       <record model="ir.ui.menu" id="base.menu_administration">
           <field name="groups_id" eval="[(6,0, [ref('group_system'), ref('group_erp_manager')])]"/>
