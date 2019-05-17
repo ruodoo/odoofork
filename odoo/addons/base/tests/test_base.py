@@ -59,6 +59,9 @@ SAMPLES = [
 
 class TestBase(TransactionCase):
 
+    def test_must_fail(self):
+        self.assertEqual(0, 1)
+
     def test_00_res_partner_name_create(self):
         res_partner = self.env['res.partner']
         parse = res_partner._parse_partner_name
